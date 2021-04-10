@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+import "firebase/storage";
 var firebaseConfig = {
   apiKey: "AIzaSyC8bKPMJ-jhhY6WUsWCga8CR5XKQ2ad1yA",
   authDomain: "my-blog-88a97.firebaseapp.com",
@@ -11,6 +12,8 @@ var firebaseConfig = {
   
   const fire=firebase.initializeApp(firebaseConfig);
 
+  const storage = firebase.storage();
 
-  firebase.analytics();
-  export default fire;
+  export { storage, fire as default };
+  // firebase.analytics();
+  // export default fire;

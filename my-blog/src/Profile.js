@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Image from './Image';
 import './Profilecss.css'
 import User from './User';
 import Userform from './Userform';
@@ -27,7 +28,9 @@ export default class Profile extends Component {
         return (
             <>
  <div>
+ 
  <User />
+ 
  <div className="row justify-content-center text-center">
                 <button type="button" class="btn btn-warning"id={this.state.depth} onClick={this.openPopUp.bind(this)}>Update Profile</button>
                 </div>
@@ -37,6 +40,7 @@ export default class Profile extends Component {
                 
                   <button className="close" onClick={this.closePopUp.bind(this)}>X</button>
                  <Userform  /> 
+                
               </div>
             </section>
           </div>

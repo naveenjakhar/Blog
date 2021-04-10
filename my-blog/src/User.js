@@ -28,7 +28,7 @@ const User = () => {
            
            <div className="row ">
                <div className="col mt-2 justify-content-center text-center ">
-                   <img id="img" src={"https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"} alt="avtar"></img>
+                   <img id="img" src={todo.img || "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"} alt="avtar"></img>
                    <div className="row mt-3  justify-content-center text-center">
                        <p id="name">Name : {todo.Name}</p>
                        
