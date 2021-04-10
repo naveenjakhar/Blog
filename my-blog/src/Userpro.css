@@ -6,6 +6,11 @@
 
 
 }
+progress{
+    height: 5vh;
+    width: 100vh;
+    
+}
 #name{
     color: white;
     font-size: 20px;

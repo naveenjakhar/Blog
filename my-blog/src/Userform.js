@@ -101,6 +101,11 @@ const Userform = () => {
   </div>
   
   <div class="col-12 justify-content-center text-center mt-4 ">
+ 
+         <div className="row ">
+         <progress value={progress} max="100" />
+         </div>
+      
     <button type="button" class="btn btn-danger mr-2"  onClick={handleUpload} required>Upload</button>
   
     <button type="submit" class="btn btn-warning" onClick={updateitem} >Update</button>
