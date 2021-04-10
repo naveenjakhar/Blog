@@ -1,0 +1,17 @@
+#img{
+    width: 45vh;
+    height: 45vh;
+    background-color: wheat;
+    border-radius: 25vh;
+
+
+}
+#name{
+    color: white;
+    font-size: 20px;
+}
+#upd{
+    color: #202550;
+    font-size: 20px;
+    font-weight: bold;
+}

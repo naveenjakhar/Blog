@@ -5,6 +5,7 @@ export const MyList = ({ todo, id }) => {
         db.collection("todos").doc(id).delete();
         console.log("button toggle");
     }
+   
     return (
         <>
             <div id="Datafieldb" className="col-11 col-md-12  mt-3 ml-md-3 ml-3 shadow-lg">
@@ -14,7 +15,7 @@ export const MyList = ({ todo, id }) => {
                     <div className="row">
                         <div  id="Datafieldw" className="col-12">
                         <div class="overlay1 ml-n3"></div>
-                        <div class="button mt-2" onClick={deleteitem}><a class="mr-2" href="#"> <i class="fas fa-trash-alt fa-1x my-auto"></i> </a></div>
+                        <div class="button mt-2"   onClick={deleteitem}><a class="mr-2" href="#"> <i class="fas fa-trash-alt fa-1x my-auto"></i> </a></div>
 
                         <div id="dda">{todo }</div>
                         
@@ -23,6 +24,7 @@ export const MyList = ({ todo, id }) => {
                     </div>
                     
                 </div>
+               
                     {/* <div id="Datafieldw" className="col-11 col-md-10 mb-4 justify-content-center text-center"><p>{todo}</p>
 
                     </div>

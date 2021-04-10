@@ -7,9 +7,12 @@ function Mydata() {
     
     const [todos, setTodos]=useState([]);
     const [todo, setTodo] = useState('');
+    
+
     useEffect(() => {
        gettodos();
     }, []);
+   
     const addTodo=(e)=>{
         e.preventDefault();
         db.collection("todos").add({
@@ -19,6 +22,7 @@ function Mydata() {
         
 
     }
+   
     const resetinput=()=>{
         setTodo("");
     }
@@ -30,6 +34,7 @@ function Mydata() {
             })));
         })
     }
+    
     return (
         <div className="container mt-5">
        
@@ -40,6 +45,7 @@ function Mydata() {
             <div className="col-4 col-md-1 ">
             <button type="submit" className="btn btn-primary w-80 " onClick={addTodo}>Post</button>  <br></br>
             <button onClick={resetinput} type="button"  className="btn btn-danger w-80 mt-3" >Clear</button> </div>
+              
         </div>
             </form>
            
@@ -50,7 +56,9 @@ function Mydata() {
             
             ))}
             </div>
+           
         </div>
+        
     )
 }
 
